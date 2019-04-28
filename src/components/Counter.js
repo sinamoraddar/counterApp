@@ -3,7 +3,7 @@ import ChangeNumberButton from './ChangeNumberButton';
 
 const Counter = () => (
     <div>
-        <div>0</div>
+        <div>testing for branching</div>
         <ChangeNumberButton/>
         <ChangeNumberButton/>
         <ChangeNumberButton/>
