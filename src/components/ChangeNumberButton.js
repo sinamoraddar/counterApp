@@ -3,11 +3,11 @@ import React from 'react';
 const renderButton = (buttonType, props) => {
     switch (buttonType) {
         case 'add':
-            return <button onClick={() => props.handleChange(buttonType)}>+</button>
+            return <button className="btn btn-success" onClick={() => props.handleChange(buttonType)}>+</button>
         case 'subtract':
-            return <button onClick={() => props.handleChange(buttonType)}>-</button>
+            return <button className="btn btn-danger" onClick={() => props.handleChange(buttonType)}>-</button>
         case 'reset':
-            return <button onClick={() => props.handleChange(buttonType)}>Reset</button>
+            return <button className="btn btn-warning" onClick={() => props.handleChange(buttonType)}>Reset</button>
         default:
             return undefined
     }
@@ -15,9 +15,12 @@ const renderButton = (buttonType, props) => {
 
 const ChangeNubmerButton = (props) => (
     <div>
-        {
-            renderButton(props.buttonType, props)
-        }
+        
+        
+            {
+                renderButton(props.buttonType, props)
+            }
+        
     </div>
 
 );

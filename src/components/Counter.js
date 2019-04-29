@@ -1,7 +1,5 @@
 import React from 'react';
 import ChangeNumberButton from './ChangeNumberButton';
-
-<<<<<<< HEAD
 class Counter extends React.Component {
     state = {
         count: 0,
@@ -39,26 +37,16 @@ class Counter extends React.Component {
     }
     render() {
         return (
-            <div>
-                <div>{this.state.count}</div>
-                <ChangeNumberButton handleChange={this.handleChange} buttonType={this.state.buttonType.add} />
-                <ChangeNumberButton handleChange={this.handleChange} buttonType={this.state.buttonType.subtract} />
-                <ChangeNumberButton handleChange={this.handleChange} buttonType={this.state.buttonType.reset} />
+            <div className="counter" >
+                <div className="count">{this.state.count}</div>
+                <div className="btnGroup"><ChangeNumberButton handleChange={this.handleChange} buttonType={this.state.buttonType.add} />
+                    <ChangeNumberButton handleChange={this.handleChange} buttonType={this.state.buttonType.subtract} />
+                    <ChangeNumberButton handleChange={this.handleChange} buttonType={this.state.buttonType.reset} />
+                </div>
             </div>
         )
     }
 
 };
-=======
-const Counter = () => (
-    <div>
-        <div>0</div>
-        <ChangeNumberButton/>
-        <ChangeNumberButton/>
-        <ChangeNumberButton/>
-    </div>
-
-);
->>>>>>> parent of 7820903... testing
 
 export default Counter;
