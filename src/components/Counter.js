@@ -1,6 +1,7 @@
 import React from 'react';
 import ChangeNumberButton from './ChangeNumberButton';
 
+<<<<<<< HEAD
 class Counter extends React.Component {
     state = {
         count: 0,
@@ -48,5 +49,16 @@ class Counter extends React.Component {
     }
 
 };
+=======
+const Counter = () => (
+    <div>
+        <div>0</div>
+        <ChangeNumberButton/>
+        <ChangeNumberButton/>
+        <ChangeNumberButton/>
+    </div>
+
+);
+>>>>>>> parent of 7820903... testing
 
 export default Counter;
