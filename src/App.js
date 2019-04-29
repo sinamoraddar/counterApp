@@ -31,12 +31,15 @@ class App extends React.Component {
 
   render() {
     return (
+
       <BrowserRouter>
         <NavBar />
-        <Switch>
-          <Route exact path="/" render={(routeProps) => <Counter {...routeProps} {...this.state} />}></Route>
-          <Route path="/settings" render={(routeProps) => <Settings {...routeProps} {...this.state} handleChange={this.handleChange} />}></Route>
-        </Switch>
+        <div className="container">
+          <Switch>
+            <Route exact path="/" render={(routeProps) => <Counter {...routeProps} {...this.state} />}></Route>
+            <Route path="/settings" render={(routeProps) => <Settings {...routeProps} {...this.state} handleChange={this.handleChange} />}></Route>
+          </Switch>
+        </div>
       </BrowserRouter>
 
     );
