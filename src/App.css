@@ -1,5 +1,5 @@
 body {
-  background: rebeccapurple !important;
+  background: green !important;
   background-size: cover !important;
 }
 .count {
@@ -26,7 +26,7 @@ body {
   color: black;
 }
 .activeNav {
-  color: rgb(158, 89, 199);
+  color: rgb(72, 255, 0);
 }
 .input-group {
   margin: 10px auto;
